@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+      <div id="search-container">
+          <input type="search" id="search-input"
+          placeholder="Search product name here..">
+          <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Mystery')">
+        Mystery
+        </button>
+        <button class="button-value" onclick="filterProduct('Fantasy')">
+        Fantasy
+        </button>
+        <button class="button-value" onclick="filterProduct('Adventure')">
+           Adventure
+        </button>
+        <button class="button-value" onclick="filterProduct('Science')">
+          Science
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
